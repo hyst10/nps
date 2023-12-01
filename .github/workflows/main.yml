@@ -1,6 +1,7 @@
-name: Release
+name: Release0
 
 on:
+  workflow_dispatch: # 手动触发
   release:
     types: [published]
     branches: [ master ]
