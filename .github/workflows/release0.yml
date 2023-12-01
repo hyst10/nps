@@ -1,4 +1,4 @@
-name: Release
+name: Release #自动发布
 
 on:
   release:
@@ -156,7 +156,7 @@ jobs:
       with:
         context: .
         file: ./Dockerfile.npc
-        platforms: linux/amd64,linux/arm,linux/arm64
+        platforms: linux/amd64,linux/arm64
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/npc:latest
